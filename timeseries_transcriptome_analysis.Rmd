@@ -727,10 +727,10 @@ ta8_carotenoid_synthesis_genes_plot<-ggplot(data=carotenoid_synthesis_ta8_zscore
   ylab("Z-score of transcript abundance")+
   theme(text=element_text(size=30),axis.title.y = element_text(size=25),legend.position="right",legend.direction="vertical",legend.text=element_text(size=25))+
   scale_x_continuous(breaks=c(0,360,720,1080), labels = c("0","6","12","18")) +
-  scale_shape_manual(values=c(22,21,22,21,24,25,23),labels = c("pytoene desaturase","prenyltransferase","crtB","crtI","crtL1","crtL2","hydroxylase"), name="Gene")+
-  scale_color_manual(values=c(rep("#CC79A7",7)), labels = c("pytoene desaturase","prenyltransferase","crtB","crtI","crtL1","crtL2","hydroxylase"),name="Gene")+
+  scale_shape_manual(values=c(22,21,22,21,24,25,23),labels = c("phytoene desaturase","prenyltransferase","crtB","crtI","crtL1","crtL2","hydroxylase"), name="Gene")+
+  scale_color_manual(values=c(rep("#CC79A7",7)), labels = c("phytoene desaturase","prenyltransferase","crtB","crtI","crtL1","crtL2","hydroxylase"),name="Gene")+
   #geom_ribbon(aes(ymin=value-se, ymax=value+se), alpha=.2, color=NA)+
-  scale_fill_manual(values=c(rep("white",2),rep("#CC79A7",5)),labels = c("pytoene desaturase","prenyltransferase","crtB","crtI","crtL1","crtL2","hydroxylase"), name="Gene")+
+  scale_fill_manual(values=c(rep("white",2),rep("#CC79A7",5)),labels = c("phytoene desaturase","prenyltransferase","crtB","crtI","crtL1","crtL2","hydroxylase"), name="Gene")+
   geom_line(size=1) +
   geom_point(size=5, aes(shape=ID), stroke=1.5)+
   ggtitle("A.")
